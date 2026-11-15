@@ -1,0 +1,31 @@
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Python Environments & Bytecode
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Environment Secrets & Local Config
+.env
+.env.local
+
+# Large Raw Data & Model Caches (Keep manifest/provenance JSONs)
+backend/data/raw/*.csv
+backend/data/raw/*.tsv
+backend/data/raw/*.txt
+backend/data/raw/*.gz
+backend/data/raw/*.h5ad
+backend/data/processed/*.parquet
+
+# Logs & Editor Temp Files
+*.log
+*.swp
+*~

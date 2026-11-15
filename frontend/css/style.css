@@ -1,0 +1,268 @@
+/* ==========================================================================
+   KARUNX LABS — HELIX Liquid Glass Components, Badges & Scientific Controls
+   ========================================================================== */
+
+/* Page Header */
+.module-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.module-kicker {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-cyan);
+  margin-bottom: 4px;
+}
+
+.module-title {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.module-desc {
+  margin-top: 6px;
+  max-width: 780px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* Liquid Glass Cards */
+.glass-card {
+  background: var(--bg-glass);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-glass), var(--glass-specular);
+  padding: 20px 22px;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.glass-card:hover {
+  border-color: rgba(125, 211, 252, 0.34);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.card-subtitle {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+}
+
+/* KPI Metric Cards */
+.metric-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.metric-value {
+  margin-top: 6px;
+  font-family: var(--font-mono);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.metric-meta {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+/* Epistemic Provenance Badges (Real vs Model vs Synthetic) */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.badge-real {
+  color: var(--status-real);
+  background: var(--status-real-bg);
+  border: 1px solid rgba(16, 185, 129, 0.32);
+}
+
+.badge-model {
+  color: var(--status-model);
+  background: var(--status-model-bg);
+  border: 1px solid rgba(56, 189, 248, 0.32);
+}
+
+.badge-synthetic {
+  color: var(--status-synthetic);
+  background: var(--status-synthetic-bg);
+  border: 1px solid rgba(245, 158, 11, 0.32);
+}
+
+.badge-alert {
+  color: var(--status-alert);
+  background: var(--status-alert-bg);
+  border: 1px solid rgba(244, 63, 94, 0.32);
+}
+
+/* Scientific Tables */
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.sci-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.sci-table th {
+  text-align: left;
+  padding: 10px 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.sci-table td {
+  padding: 11px 12px;
+  border-bottom: 1px solid rgba(148, 187, 233, 0.07);
+  color: var(--text-secondary);
+}
+
+.sci-table tr:hover td {
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--text-primary);
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+/* Interactive Controls & Sliders */
+.control-group {
+  margin-bottom: 16px;
+}
+
+.control-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: var(--accent-cyan);
+  cursor: pointer;
+}
+
+select,
+.btn-primary,
+.btn-ghost {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+select {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  border: 1px solid var(--border-glass);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #0284c7, #2563eb);
+  color: #ffffff;
+  border: 1px solid rgba(125, 211, 252, 0.45);
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+}
+
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+}
+
+.btn-ghost:hover {
+  border-color: var(--border-active);
+}
+
+/* Chart Container & Epistemic Limitation Banner */
+.chart-box {
+  position: relative;
+  width: 100%;
+  min-height: 260px;
+}
+
+.chart-box svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.disclaimer-bar {
+  margin-top: 20px;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid var(--border-subtle);
+  font-size: 12.5px;
+  color: var(--text-secondary);
+}
+
+.disclaimer-bar strong {
+  color: var(--accent-cyan);
+}
+
+.mt-18 {
+  margin-top: 18px;
+}

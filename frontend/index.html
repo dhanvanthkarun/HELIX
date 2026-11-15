@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KARUNX LABS — HELIX | Space Biology Intelligence</title>
+  <meta name="description" content="KARUNX LABS HELIX: Spaceflight-associated immune-system intelligence platform for NASA Space Apps Challenge 2026." />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Left Navigation Rail -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <div class="brand-block">
+          <div class="brand-org">KARUNX LABS</div>
+          <div class="brand-product">HELIX</div>
+          <div class="brand-sub">Space Biology Intelligence</div>
+        </div>
+
+        <div class="nav-section-label">Intelligence Modules</div>
+        <ul class="nav-list" id="nav-list">
+          <li><button class="nav-btn active" data-module="overview"><span class="nav-index">01</span>Mission Overview</button></li>
+          <li><button class="nav-btn" data-module="astronaut"><span class="nav-index">02</span>Astronaut Health</button></li>
+          <li><button class="nav-btn" data-module="immune"><span class="nav-index">03</span>Immune Monitoring</button></li>
+          <li><button class="nav-btn" data-module="molecular"><span class="nav-index">04</span>Molecular Analytics</button></li>
+          <li><button class="nav-btn" data-module="pathways"><span class="nav-index">05</span>Pathway Explorer</button></li>
+          <li><button class="nav-btn" data-module="models"><span class="nav-index">06</span>Predictive Modelling</button></li>
+          <li><button class="nav-btn" data-module="simulation"><span class="nav-index">07</span>Hybrid Simulation</button></li>
+          <li><button class="nav-btn" data-module="evidence"><span class="nav-index">08</span>Research &amp; Reports</button></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-footer">
+        <div><strong>KARUNX LABS</strong> &copy; 2026</div>
+        <div>NASA Space Apps Challenge 2026</div>
+      </div>
+    </aside>
+
+    <!-- Main Telemetry Workspace -->
+    <div class="main-workspace">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+          <span class="challenge-tag">NASA SPACE APPS CHALLENGE 2026 &bull; HUMAN IMMUNE SYSTEM</span>
+        </div>
+        <div class="topbar-right">
+          <span class="badge badge-model" id="api-status-badge">
+            <span class="badge-dot"></span>
+            <span id="api-status-text">BACKEND: CHECKING...</span>
+          </span>
+        </div>
+      </header>
+
+      <main class="content-container" id="module-viewport">
+        <!-- Active module renders dynamically via js/main.js -->
+      </main>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

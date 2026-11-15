@@ -1,0 +1,52 @@
+/* ==========================================================================
+   KARUNX LABS — HELIX Space Biology Intelligence
+   Design Tokens: Dark Mission-Control & Liquid Glass Surfaces
+   ========================================================================== */
+
+:root {
+  /* Core Mission-Control Canvas */
+  --bg-canvas: #05080f;
+  --bg-elevated: #0a101d;
+  --bg-glass: rgba(13, 21, 38, 0.62);
+  --bg-glass-hover: rgba(18, 30, 52, 0.78);
+  --bg-glass-strong: rgba(10, 17, 32, 0.88);
+
+  /* Liquid Glass Borders & Highlights */
+  --border-subtle: rgba(148, 187, 233, 0.12);
+  --border-glass: rgba(125, 211, 252, 0.22);
+  --border-active: rgba(56, 189, 248, 0.55);
+  --glass-specular: inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+  --shadow-glass: 0 18px 42px -12px rgba(0, 0, 0, 0.65);
+
+  /* Scientific Accent Palette (Restrained Cyan & Telemetry Blue) */
+  --accent-cyan: #38bdf8;
+  --accent-cyan-dim: rgba(56, 189, 248, 0.14);
+  --accent-blue: #3b82f6;
+  --accent-indigo: #818cf8;
+
+  /* Data Provenance & Epistemic Status Colors */
+  --status-real: #10b981;
+  --status-real-bg: rgba(16, 185, 129, 0.14);
+  --status-model: #38bdf8;
+  --status-model-bg: rgba(56, 189, 248, 0.14);
+  --status-synthetic: #f59e0b;
+  --status-synthetic-bg: rgba(245, 158, 11, 0.14);
+  --status-alert: #f43f5e;
+  --status-alert-bg: rgba(244, 63, 94, 0.14);
+
+  /* Typography */
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, sans-serif;
+  --font-mono: "SF Mono", "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+
+  /* Layout Dimensions & Motion */
+  --sidebar-width: 272px;
+  --topbar-height: 64px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --transition-fast: 160ms cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-smooth: 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
